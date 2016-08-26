@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bamin.com.bamindaijia.Activity.ChosseSite">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="厦门"
+            android:textSize="@dimen/normalTextSize" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/textView_city"
+            android:layout_toRightOf="@+id/textView_city"
+            android:src="@mipmap/dgp_route_details_icon_unfold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:background="@color/gray_white" />
+
+        <TextView
+            android:id="@+id/textView_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textColor="@color/basic_color"
+            android:textSize="@dimen/normalTextSize" />
+
+
+        <EditText
+            android:id="@+id/editText_where"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@null"
+            android:hint="你从哪里出发"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/normalEditTextSize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray_white" />
+
+    <ListView
+        android:id="@+id/listView_site"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/listView_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/textView4"
+        android:id="@+id/relaL_no_result"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="搜索无结果"
+            android:textColor="@color/text_gray"
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

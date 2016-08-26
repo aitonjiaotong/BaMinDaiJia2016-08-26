@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_bg"
+
+    tools:context=".Activity.QianmingActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="签名"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/titleTextSize" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="完成"
+            android:id="@+id/tv_complete"
+            android:textColor="@color/text_orange"
+            android:textSize="@dimen/normalTextSize" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="120dp"
+        android:hint="请输入您的签名"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:textSize="@dimen/normalEditTextSize"
+        android:gravity="start"
+        android:maxLength="40"
+        android:id="@+id/edt_user_signature" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="0"
+            android:id="@+id/tv_edittextNum"
+            android:layout_toLeftOf="@+id/textview1111"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="/40"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textview1111"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

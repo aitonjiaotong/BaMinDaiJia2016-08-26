@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aiton.bamin.bamindaijiadrier.activity.ComfirmCostActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="确认订单金额"
+            android:textSize="@dimen/title_textsize"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:background="@color/line_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_width"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:textColor="@color/light_black"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="乘客姓名"
+                android:id="@+id/textView_name"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:textColor="@color/light_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下单时间：2016-7-22 17:09:10"
+                android:id="@+id/textView_time"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/car_trip_friend_bubble_startpoint"/>
+
+                <TextView
+                    android:id="@+id/textView_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:layout_toRightOf="@+id/imageView9"
+                    android:textSize="@dimen/normalTextSize"
+                    android:textColor="@color/light_black"
+                    android:text="联谊大厦"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/car_trip_friend_bubble_endpoint"/>
+
+                <TextView
+                    android:id="@+id/textView_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@+id/imageView26"
+                    android:layout_toRightOf="@+id/imageView26"
+                    android:textSize="@dimen/normalTextSize"
+                    android:textColor="@color/light_black"
+                    android:text="安兜"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:textColor="@color/basic_color"
+                        android:textSize="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10.0"
+                        android:id="@+id/textView_howLong"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:textSize="@dimen/normal_textsize"
+                        android:textColor="@color/light_black"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="公里"
+                        android:layout_alignBottom="@+id/textView_howLong"
+                        android:layout_toRightOf="@+id/textView_howLong"
+                        android:layout_toEndOf="@+id/textView_howLong"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:background="@drawable/btn_selsector_no_conner"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="更改"
+                android:id="@+id/button_change"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:textColor="@color/basic_color"
+                    android:textSize="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18.0"
+                    android:id="@+id/textView_price"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/normal_textsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:layout_alignBottom="@+id/textView_price"
+                    android:layout_toRightOf="@+id/textView_price"
+                    android:layout_toEndOf="@+id/textView_price"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_selsector_no_conner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="确认"
+            android:id="@+id/button_comfrim"/>
+
+        <RelativeLayout
+            android:id="@+id/rela_wait_pay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="等待乘客支付"
+                android:textColor="@color/aiton_basic_color"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_success_pay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="乘客已支付"
+                    android:textSize="25dp"
+                    android:textColor="@color/aiton_basic_color"
+                    android:id="@+id/textView37"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:src="@drawable/cancle_selector"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/img_close"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView37"
+                    android:layout_toEndOf="@+id/textView37" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:textSize="@dimen/normal_textsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计费规则"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"/>
+
+</RelativeLayout>

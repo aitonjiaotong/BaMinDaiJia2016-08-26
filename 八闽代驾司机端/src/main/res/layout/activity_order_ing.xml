@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aiton.bamin.bamindaijiadrier.activity.OrderIngActivity">
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_above="@+id/button_server">
+    </com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textColor="@color/light_black"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张先生"
+                        android:id="@+id/textView_name"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/normal_textsize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下单时间：2016-7-21 16:56:04"
+                        android:id="@+id/textView_time"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/car_trip_friend_bubble_startpoint"/>
+
+                        <TextView
+                            android:id="@+id/textView_start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toEndOf="@+id/imageView7"
+                            android:layout_toRightOf="@+id/imageView7"
+                            android:textSize="@dimen/normalTextSize"
+                            android:textColor="@color/light_black"
+                            android:text="联谊大厦"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@mipmap/car_trip_friend_bubble_endpoint"/>
+
+                        <TextView
+                            android:id="@+id/textView_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toEndOf="@+id/imageView8"
+                            android:layout_toRightOf="@+id/imageView8"
+                            android:textSize="@dimen/normalTextSize"
+                            android:textColor="@color/light_black"
+                            android:text="安兜"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@mipmap/car_phone_btn_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/img_phone"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_weight="1.1"
+                android:textSize="@dimen/normal_textsize"
+                android:textColor="@color/basic_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="去接乘客"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                />
+
+            <Button
+                android:layout_weight="1.7"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:background="@drawable/btn_selsector_no_conner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="修改目的地"
+                android:visibility="gone"
+                android:id="@+id/button_change_end"
+                android:layout_marginRight="1dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_weight="1.8"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:background="@drawable/btn_selsector_no_conner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="进入导航"
+                android:id="@+id/button_daoHang"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_selsector_no_conner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="接到乘客(开始服务)"
+        android:id="@+id/button_server"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

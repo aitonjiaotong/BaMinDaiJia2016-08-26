@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">八闽代驾司机端</string>
+    <string name="app_id">57903460</string>
+
+    <string name="preference_default_tts_role">xiaoyan</string>
+    <string name="preference_key_tts_speed">tts_speed</string>
+    <string name="preference_key_tts_volume">tts_volume</string>
+    <string name="preference_key_tts_pitch">tts_pitch</string>
+
+</resources>

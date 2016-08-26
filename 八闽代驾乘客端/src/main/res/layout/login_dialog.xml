@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_inputPhone"
+        android:background="@drawable/linear_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:paddingRight="15dp"
+                android:src="@drawable/cancle_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView_cancleLoginDialog"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:background="@null"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号码"
+                android:id="@+id/editText_phoneNum"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/basic_color"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <Button
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:background="@drawable/btn_shape_selector"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:id="@+id/button_loginNext"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_SMS"
+        android:background="@drawable/linear_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入验证码"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:paddingRight="15dp"
+                    android:src="@drawable/cancle_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView_cancleSmsDialog"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <ImageView
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:src="@mipmap/one_login_title_back_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView_backPhone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15871105320"
+                    android:id="@+id/textView_phone"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <Button
+                    android:background="@drawable/btn_contacts_selector"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="重新发送"
+                    android:id="@+id/button_sendSms"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView_phone"
+                    android:layout_toEndOf="@+id/textView_phone"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_margin="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:textSize="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_shape_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText_Sms01"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:textSize="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_shape_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText_Sms02"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:textSize="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_shape_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText_Sms03"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:textSize="20dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_shape_selector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editText_Sms04"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

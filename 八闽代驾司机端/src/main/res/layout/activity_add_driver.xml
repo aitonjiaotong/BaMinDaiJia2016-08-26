@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddDriverActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_hight"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="代驾司机加盟"
+            android:textSize="@dimen/title_textsize"/>
+
+        <ImageView
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:src="@mipmap/zuojiantou2x"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@mipmap/ditu2x"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relativeLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                style="@style/btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="我要报名"
+                />
+
+            <Button
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                style="@style/btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="报名进度"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

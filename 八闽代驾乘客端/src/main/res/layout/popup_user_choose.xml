@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/banTouMing"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/popup_choose_close"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/normalTextSize" />
+
+                <TextView
+                    android:id="@+id/popup_choose_sure"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/text_orange"
+                    android:textSize="@dimen/normalTextSize" />
+            </RelativeLayout>
+
+            <com.aiton.administrator.shane_library.shane.widget.WheelView
+                android:id="@+id/wheel_view_wv"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

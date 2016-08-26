@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadow"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="bamin.com.bamindaijia.Activity.CommonlyAddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="常用地址"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/titleTextSize" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="删除" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/rela_commonly_address_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/layout_selector_white_system_gray">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/search_common_address_home_setted" />
+
+        <TextView
+            android:id="@+id/tv_address_home_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:text="请输入回家地址"
+            android:textSize="@dimen/normalTextSize" />
+
+        <ImageView
+            android:id="@+id/img_home_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/car_icon_table_arrow_right_pressed" />
+        <com.aiton.administrator.shane_library.shane.widget.AnimCheckBox
+            android:id="@+id/AnimCheckBox_del_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            app:circle_color="@color/basic_color"
+            app:stroke_color="@color/gray_white"/>
+        <LinearLayout
+            android:id="@+id/lineL_address_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/tv_address_home_in"
+            android:layout_toRightOf="@+id/tv_address_home_in"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_address_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址"
+                android:textColor="@color/text_orange" />
+
+            <TextView
+                android:id="@+id/tv_address_home_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="详细地址" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        android:layout_marginLeft="10dp"
+        android:background="@color/gray_white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rela_commonly_address_company"
+        android:background="@drawable/layout_selector_white_system_gray">
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/search_common_address_company_setted" />
+
+        <TextView
+            android:id="@+id/tv_address_company_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView27"
+            android:text="请输入公司地址"
+
+            android:textSize="@dimen/normalTextSize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_company_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/car_icon_table_arrow_right_pressed" />
+        <com.aiton.administrator.shane_library.shane.widget.AnimCheckBox
+            android:id="@+id/AnimCheckBox_del_company"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            app:circle_color="@color/basic_color"
+            android:visibility="gone"
+            app:stroke_color="@color/gray_white"/>
+        <LinearLayout
+            android:id="@+id/lineL_address_company"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/tv_address_company_in"
+            android:layout_toRightOf="@+id/tv_address_company_in"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_address_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址"
+                android:textColor="@color/text_orange" />
+
+            <TextView
+                android:id="@+id/tv_address_company_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="详细地址" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消订单原因"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_cancle01"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal">
+            <com.aiton.administrator.shane_library.shane.widget.AnimCheckBox
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:circle_color="@color/basic_color"
+                app:stroke_color="@color/gray_white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/AnimCheckBox01"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="司机没来"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="@color/light_black"
+                android:id="@+id/textView_cancleOrder01"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/AnimCheckBox01"
+                android:layout_toEndOf="@+id/AnimCheckBox01"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_cancle02"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal">
+            <com.aiton.administrator.shane_library.shane.widget.AnimCheckBox
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:circle_color="@color/basic_color"
+                app:stroke_color="@color/gray_white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/AnimCheckBox02"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有人来接"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="@color/light_black"
+                android:id="@+id/textView_cancleOrder02"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/AnimCheckBox02"
+                android:layout_toEndOf="@+id/AnimCheckBox02"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_cancle03"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal">
+            <com.aiton.administrator.shane_library.shane.widget.AnimCheckBox
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:circle_color="@color/basic_color"
+                app:stroke_color="@color/gray_white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/AnimCheckBox03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="临时有事"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="@color/light_black"
+                android:id="@+id/textView_cancleOrder03"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/AnimCheckBox03"
+                android:layout_toEndOf="@+id/AnimCheckBox03"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+        <EditText
+            android:textSize="@dimen/normalEditTextSize"
+            android:padding="5dp"
+            android:gravity="left|top"
+            android:inputType="textMultiLine"
+            android:hint="其他原因"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape_unselect"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/editText_reason"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_shape_selector"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/button_commit"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>

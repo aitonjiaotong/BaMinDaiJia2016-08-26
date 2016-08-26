@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bamin.com.bamindaijia.Activity.OrderIngActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/Title_Hight"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                >
+
+                <TextView
+                    android:textSize="@dimen/titleTextSize"
+                    android:textColor="@color/light_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="取消订单"
+                    android:textSize="@dimen/normalTextSize"
+                    android:id="@+id/textView_cancleOrder"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white">
+
+                <com.aiton.administrator.shane_library.shane.widget.CircleImageView
+                    android:id="@+id/img_order_driverImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+
+                    android:src="@mipmap/ic_avatar"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_driverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/img_order_driverImage"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/img_order_driverImage"
+                    android:layout_toRightOf="@+id/img_order_driverImage"
+                    android:text="张司机"
+                    android:textColor="@color/light_black"
+                    android:textSize="22dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textView_driveYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView_driverName"
+                    android:layout_alignStart="@+id/textView_driverName"
+                    android:layout_centerVertical="true"
+                    android:text="驾龄：5年"
+                    android:textSize="@dimen/normalTextSize"/>
+
+                <TextView
+                    android:id="@+id/textView_orderNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/img_order_driverImage"
+                    android:layout_alignLeft="@+id/textView_driveYear"
+                    android:layout_alignStart="@+id/textView_driveYear"
+                    android:text="接单数：500单"
+                    android:textSize="@dimen/normalTextSize"/>
+
+                <ImageView
+                    android:id="@+id/img_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/car_phone_btn_pressed"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@color/gray_white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/car_trip_friend_bubble_startpoint"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@+id/imageView28"
+                        android:layout_toRightOf="@+id/imageView28"
+                        android:textSize="@dimen/normalTextSize"
+                        android:textColor="@color/light_black"
+                        android:text="联谊大厦"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:background="@color/gray_white"
+                    android:layout_width="@dimen/line_width"
+                    android:layout_height="match_parent"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/imageView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/car_trip_friend_bubble_endpoint"/>
+
+                    <TextView
+                        android:id="@+id/textView_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@+id/imageView29"
+                        android:layout_toRightOf="@+id/imageView29"
+                        android:textSize="@dimen/normalTextSize"
+                        android:textColor="@color/light_black"
+                        android:text="安兜"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@color/gray_white"/>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:textSize="@dimen/normalTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下单时间：2016-7-15 16:53:23"
+                    android:id="@+id/textView_time"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:textSize="@dimen/normalTextSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="司机大概还有5分钟到达"
+                    android:id="@+id/textView_leftTime"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_width"
+                android:background="@color/gray_white"/>
+
+            <TextView
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="等待司机"
+                        android:textSize="50dp"
+                        android:textColor="@color/basic_color"
+                        android:id="@+id/textView_OrderStatue"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+            <Button
+                android:id="@+id/btn_end_pay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:background="@color/basic_color"
+                android:text="去结算"
+                android:visibility="gone"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

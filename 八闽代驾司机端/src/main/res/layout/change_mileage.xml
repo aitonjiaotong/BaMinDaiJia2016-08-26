@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@null"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/linear_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:textSize="@dimen/normal_textsize"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更改订单公里数"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <EditText
+            android:paddingLeft="15dp"
+            android:hint="请输入公里数"
+            android:textSize="@dimen/normalEditTextSize"
+            android:inputType="numberDecimal"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/editText_mileage"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_cancle_selsector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:id="@+id/button_cancle"/>
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_selsector"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="确认"
+                android:id="@+id/button_commit"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

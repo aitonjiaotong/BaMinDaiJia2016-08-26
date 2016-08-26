@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_weight="0.6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/car_trip_friend_bubble_startpoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/normalTextSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联谊大厦"
+                        android:id="@+id/textView_start"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:layout_marginLeft="5dp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@mipmap/car_trip_friend_bubble_endpoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView5"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/normalTextSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="安兜"
+                        android:id="@+id/textView_end"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView5"
+                        android:layout_toEndOf="@+id/imageView5"
+                        android:layout_marginLeft="5dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="距离:"
+                        android:textSize="@dimen/normalTextSize"
+                        android:id="@+id/textView16"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:textSize="@dimen/normalTextSize"
+                        android:textColor="@color/light_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5公里"
+                        android:id="@+id/textView_HowLong"
+                        android:layout_alignTop="@+id/textView16"
+                        android:layout_toRightOf="@+id/textView16"
+                        android:layout_toEndOf="@+id/textView16"
+                        android:layout_marginLeft="10dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:textSize="33dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18"
+                        android:textColor="@color/red"
+                        android:id="@+id/textView_cost"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:textSize="@dimen/normalTextSize"
+                        android:textColor="@color/black"
+                        android:layout_marginBottom="5.5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:id="@+id/textView9"
+                        android:layout_alignBottom="@+id/textView_cost"
+                        android:layout_toRightOf="@+id/textView_cost"
+                        android:layout_toEndOf="@+id/textView_cost"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="小费："
+                        android:textSize="@dimen/normalTextSize"
+                        android:id="@+id/textView10"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+
+                    <TextView
+                        android:textSize="@dimen/normalTextSize"
+                        android:textColor="@color/red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:id="@+id/textView_fee"
+                        android:layout_alignBottom="@+id/textView10"
+                        android:layout_toRightOf="@+id/textView10"
+                        android:layout_toEndOf="@+id/textView10"/>
+
+                    <TextView
+                        android:textSize="@dimen/normalTextSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView_fee"
+                        android:layout_toEndOf="@+id/textView_fee"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical">
+
+        j<Button
+            android:background="@color/text_gray"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="忽略"
+            android:textSize="22dp"
+            android:textColor="@color/white"
+            android:id="@+id/button_ignore"/>
+
+        <Button
+            android:background="@color/basic_color"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="接单"
+            android:id="@+id/button_accept"/>
+    </LinearLayout>
+</LinearLayout>

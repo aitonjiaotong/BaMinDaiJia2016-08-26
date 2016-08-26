@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bamin.com.bamindaijia.Activity.PayActivity">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Title_Hight"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="@dimen/titleTextSize"
+            android:textColor="@color/light_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:background="@color/gray_white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_width"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/car_trip_friend_bubble_startpoint"/>
+
+            <TextView
+                android:id="@+id/textView_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/imageView33"
+                android:layout_toRightOf="@+id/imageView33"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="@color/light_black"
+                android:text="联谊大厦"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/car_trip_friend_bubble_endpoint"/>
+
+            <TextView
+                android:id="@+id/textView_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/imageView34"
+                android:layout_toRightOf="@+id/imageView34"
+                android:textSize="@dimen/normalTextSize"
+                android:textColor="@color/light_black"
+                android:text="安兜"/>
+        </RelativeLayout>
+
+        <TextView
+            android:background="@color/gray_white"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:textSize="@dimen/normalTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下单时间：2016-7-15 16:53:23"
+            android:id="@+id/textView_time"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/normalTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公里数："
+            android:id="@+id/textView64"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:textSize="@dimen/normalTextSize"
+            android:textColor="@color/basic_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.0公里"
+            android:id="@+id/textView_mileage"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView64"
+            android:layout_toEndOf="@+id/textView64"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_mes"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:textColor="@color/red"
+            android:textSize="@dimen/normalTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/textView_mes"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:textColor="@color/basic_color"
+                android:textSize="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18.0"
+                android:id="@+id/textView_cost"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/normalTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元"
+                android:layout_alignBottom="@+id/textView_cost"
+                android:layout_toRightOf="@+id/textView_cost"
+                android:layout_toEndOf="@+id/textView_cost"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:src="@mipmap/weixin_logo"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/imageView35"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"/>
+
+                    <TextView
+                        android:textSize="@dimen/normalTextSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信支付"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView35"
+                        android:layout_toEndOf="@+id/imageView35"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="17dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:src="@mipmap/pay_center_icons_17"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/imageView36"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"/>
+
+                    <TextView
+                        android:textSize="@dimen/normalTextSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝支付"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/imageView36"
+                        android:layout_toEndOf="@+id/imageView36"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="17dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:src="@mipmap/yinlian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="18dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radio_pay_mode"
+                    android:layout_gravity="center_horizontal">
+
+                    <RadioButton
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:id="@+id/radiobtn_pay_weixin"
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioButton
+                        android:layout_gravity="center"
+                        android:id="@+id/radiobtn_pay_zhifubao"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <RadioButton
+                        android:layout_gravity="center"
+                        android:id="@+id/radiobtn_pay_yinlian"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:textSize="@dimen/normalTextSize"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="支付"
+            android:id="@+id/button_pay"
+            android:background="@drawable/btn_shape_selector"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+
+</LinearLayout>
